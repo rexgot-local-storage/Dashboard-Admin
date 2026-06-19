@@ -5,15 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
-<body>
+<body class="slite">
     <header>
         <h1>Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a class="nav-op-head" href="index.html">Home</a></li>
+                <li><a class="nav-op-head" href="profile.html">Profile</a></li>
+                <li>
+                    <ul>
+                        <p class="nav-op-head">Reports</p>
+                        <li><a href="analytics.html">Analytics</a></li>
+                        <li><a href="reports.html">Reports</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <p class="nav-op-head">Settings</p>
+                        <li><a href="settings.html">Settings</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                        <li><a href="logout.html">Light Mode</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <p>Welcome to the Dashboard!</p>
+        <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*rQ3d_dKG7V2JhX8SrUjs6g.png" alt="">
+        <section>
+            <canvas id="LC" style="width:100%;max-width:600px"></canvas>
+            <canvas id="MC" style="width:100%;max-width:100%"></canvas>
+            <div class="ChartsCircle">
+                <canvas id="PC" style="width:100%;max-width:500px"></canvas>
+                <canvas id="DC" style="width:100%;max-width:500px"></canvas>
+            </div>
+        </section>
     </main>
+    <script src="src/data/data-charts.js"></script>
 </body>
 
 </html>
